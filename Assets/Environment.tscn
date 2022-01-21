@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="Environment" id=1]
+background_energy = 0.0
+ambient_light_color = Color( 0.823529, 0.823529, 0.823529, 1 )
+ambient_light_energy = 0.3
+auto_exposure_max_luma = 14.22
+auto_exposure_speed = 1.92
+glow_intensity = 1.41
+glow_strength = 1.18
+glow_bloom = 1.0
+adjustment_enabled = true
+
+[node name="WorldEnvironment" type="WorldEnvironment"]
+environment = SubResource( 1 )

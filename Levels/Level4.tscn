@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Assets/TileMapMain.tres" type="MeshLibrary" id=1]
+[ext_resource path="res://Assets/Player.tscn" type="PackedScene" id=2]
+
+[node name="Level" type="Spatial"]
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+
+[node name="Tiles" type="GridMap" parent="."]
+mesh_library = ExtResource( 1 )
+data = {
+"cells": PoolIntArray( -65536, 0, 1048577, -65532, 0, 1441792, -65531, 0, 0, -8, 0, 1048576, -7, 0, 1048578, -6, 0, 1048576, -5, 0, 1048577, -4, 0, 1048577, -3, 0, 1048577, -2, 0, 1, -1, 0, 0, -65536, 1, 655360, -65535, 1, 1048577, -65534, 1, 1048577, -65533, 1, 1048577, -65532, 1, 1441792, -65531, 1, 0, -8, 1, 1048576, -7, 1, 1048576, -6, 1, 1048576, -3, 1, 1, -2, 1, 0, -1, 1, 1, -65536, 2, 655361, -2, 2, 1, -65536, 3, 655361, -2, 3, 1, -65536, 4, 655361, -2, 4, 1, -65536, 5, 655360, -2, 5, 655360, -1, 5, 655361, -65536, 6, 1, -2, 6, 1, -1, 6, 655360, -65536, 65535, 655360, -65535, 65535, 1441793, -65534, 65535, 1441793, -65533, 65535, 1441793, -65532, 65535, 1441792, -65531, 65535, 0, -8, 65535, 1048576, -7, 65535, 1048576, -6, 65535, 1048576, -2, 65535, 655360, -1, 65535, 0 )
+}
+__meta__ = {
+"_editor_clip_": 0,
+"_editor_floor_": Vector3( 0, -1, -6 )
+}
+
+[node name="DirectionalLight" type="DirectionalLight" parent="."]
+transform = Transform( 1, 0, 0, 0, -5.96046e-08, 1, 0, -1, -5.96046e-08, -3, 7, 10 )
+light_energy = 1.03
+light_indirect_energy = 0.0
+light_specular = 0.52
+shadow_enabled = true
+shadow_color = Color( 0.890196, 0.890196, 0.890196, 1 )
